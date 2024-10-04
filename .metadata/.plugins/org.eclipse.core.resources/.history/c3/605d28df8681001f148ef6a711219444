@@ -1,0 +1,20 @@
+package com.bankapp.jvabasics;
+
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_97_Validatetheaddcookie {
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		String url="https://flipkart.com";
+		driver.navigate().to(url);
+		//to add a cookie you have to pass name and value i pass name as mycookie value is 123456890
+		Cookie name=new Cookie("myname","123456");
+		driver.manage().addCookie(name);
+		
+		
+ 
+	}
+
+}

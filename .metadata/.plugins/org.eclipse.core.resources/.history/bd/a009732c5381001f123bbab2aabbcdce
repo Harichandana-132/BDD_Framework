@@ -1,0 +1,27 @@
+package com.bankapp.jvabasics;
+class A
+{
+	void test1()
+	{
+		System.out.println("test 1 is running");
+	}
+	static void test2()
+	{
+		System.out.println("test2 is running");
+	}
+}
+class B extends A
+{
+	void test3()
+	{
+		System.out.println("test3 is running");
+	}
+	void test4()
+	{
+		System.out.println("test4 is running");
+	}
+}
+public class TC_29_Validatethesinglelevelinheritance {
+	
+
+}

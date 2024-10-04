@@ -1,0 +1,88 @@
+package com.bankapp.jvabasics;
+
+public class TC_14_Validatethemainmethod {
+	public static void main(String[] args) {
+		//static
+		TC_13_ValidatetheStaticandNonstaticmethods.sum(20000, 30000);
+		//non static
+		TC_13_ValidatetheStaticandNonstaticmethods vs=new TC_13_ValidatetheStaticandNonstaticmethods();
+		vs.square(300);
+		vs.cube(255);
+		//local and global variables
+		String b="welcome";
+		TC_15_Validatethelocalandglobalvariables.test(b);
+		TC_15_Validatethelocalandglobalvariables ts=new TC_15_Validatethelocalandglobalvariables ();
+		System.out.println("the global variable is:"+ts.a);
+		//global variables
+		TC_16_Validatetheglobalvariable tv=new TC_16_Validatetheglobalvariable();
+		System.out.print(tv.a+"\n"+tv.b+"\n"+tv.c+"\n"+tv.d+"\n"+tv.e+"\n"+tv.f+"\n"+tv.g);
+		//ststic to static
+		System.out.println(TC_17_Validatethestatictostaticmethod.sample());
+		//static to non static
+		TC_18_Validatethestatictononstatic va=new TC_18_Validatethestatictononstatic();
+		System.out.println(va.demo());
+		//buttonclick
+		TC_20_Validatethehowmanybuttonclicks.click();
+		TC_20_Validatethehowmanybuttonclicks.click();
+		TC_20_Validatethehowmanybuttonclicks.click();
+		System.out.println("button got clicked:"+TC_20_Validatethehowmanybuttonclicks.count);
+		//method overloading (variation of arguments)
+		 TC_22_Validatethemethodoverloadingvariationinarguments.demo1(200);
+		 TC_22_Validatethemethodoverloadingvariationinarguments.demo1(20.89);
+		//method overloading(length of arguments)
+		 TC_23_Validatethemethodoverloadingvariationinlengthofargumnets.test1(20 , 30);
+		 TC_23_Validatethemethodoverloadingvariationinlengthofargumnets.test1(20, 30, 40);
+		//method overloading(position of arguments)
+		TC_24_Validatethemethodofargumentspositionofarguments.sample1(200, 34.5);
+		TC_24_Validatethemethodofargumentspositionofarguments.sample2(56.8, 200);
+		//constructor
+		TC_25_Validatetheconstructor tc=new TC_25_Validatetheconstructor(34,"chandana",80.6);
+		tc.display();
+		//this keyword
+		TC_25_Validatetheconstructor tc1=new TC_25_Validatetheconstructor(34,"chandana",80.6);
+		tc.display();
+		//vaidate the account
+		TC_26_ValidatetheAccount vac=new TC_26_ValidatetheAccount();
+		System.out.println(vac.setaccno(12456890));
+		System.out.println(vac.setname("chandana"));
+		System.out.println(vac.setbalance(2000));
+		System.out.println(vac.getaccno());
+		System.out.println(vac.getname());
+		System.out.println(vac.getbalance());
+		//overloading main methods
+		TC_27_Validatetheoverloadingmainmethod vm=new TC_27_Validatetheoverloadingmainmethod();
+		vm.main(20);
+		vm.main(20, 30);
+		vm.main("rohan");
+		//this calling statements
+		Basicsthis vt1=new Basicsthis();
+		//this calling statements
+	
+		TC_28_Validatethethiscallingstatemnets th1=new TC_28_Validatethethiscallingstatemnets();
+		//super calling tstemnts
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

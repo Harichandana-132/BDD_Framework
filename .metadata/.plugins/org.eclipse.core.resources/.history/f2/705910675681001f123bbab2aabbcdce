@@ -1,0 +1,32 @@
+package com.bankapp.jvabasics;
+
+public class Inheritancemain {
+	public static void main(String[] args) {
+		//single leve inheritance
+		TC_29_Validatethesinglelevelinheritance vt=new TC_29_Validatethesinglelevelinheritance();
+		B b=new B();
+		b.test1();
+		b.test2();
+		b.test3();
+		b.test4();
+		//multi level inheritance
+		TC_30_Validatethemultilevelinheritance vt1=new TC_30_Validatethemultilevelinheritance();
+		Sample2 sm2=new Sample2();
+		sm2.test();
+		sm2.demo();
+		Sample3 sm3=new Sample3();
+		sm3.test();
+		sm3.demo();
+		sm3.dem();
+		//hierarical inheritance
+		TC_31_Validatetheheriritcalinheritance vh=new TC_31_Validatetheheriritcalinheritance();
+		Cat c=new Cat();
+		c.eat();
+		c.play();
+		Dog d=new Dog();
+		d.eat();
+		d.bark();
+	}
+	
+
+}

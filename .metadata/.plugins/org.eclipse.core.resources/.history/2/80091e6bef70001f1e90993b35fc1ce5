@@ -1,0 +1,59 @@
+package com.bankapp.jvabasics;
+
+import java.util.Arrays;
+
+public class TC_6_Validatetwodimensionalarray {
+	public static void main(String[] args) {
+		//approach1
+		int a[][]=new int[3][2];
+		a[0][0]=2000;
+		a[0][1]=4000;
+		a[1][0]=6000;
+		a[1][1]=8000;
+		a[2][0]=10000;
+		a[2][1]=12000;
+		System.out.println(Arrays.toString(a));
+		//length of the array
+		System.out.println(a.length);
+		//approach 2
+		int a1[][]= {{2000,4000},{6000,8000},{10000,12000}};
+		//length of the array
+		System.out.println("length of the rows:"+a.length);
+		System.out.println("length of the coloumns are:"+a[0].length);
+		//to read the single value from the array
+		System.out.println(a[3][2]);
+		//to read the rows and coloumns
+		for(int r=1;r<a.length-1;r++)
+		{
+			for(int c=1;c<a.length-1;c++)
+			{
+				System.out.println(a[r][c]);
+			}
+		}
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

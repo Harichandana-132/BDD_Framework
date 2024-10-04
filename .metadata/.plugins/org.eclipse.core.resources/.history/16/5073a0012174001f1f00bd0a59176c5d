@@ -1,0 +1,27 @@
+package com.bankapp.jvabasics;
+class Fther
+{
+	void smoke()
+	{
+		System.out.println("occasional smoker");
+	}
+}
+class Sn extends Fther
+{
+	void smoke()
+	{
+		System.out.println("chain smoker");
+	}
+}
+public class TC_40_Validatetheupcastingincaseofmethodoverriding {
+	public static void main(String[] args) {
+	Fther f=new Sn();
+f.smoke();
+	}
+	
+	
+	
+	
+	
+
+}

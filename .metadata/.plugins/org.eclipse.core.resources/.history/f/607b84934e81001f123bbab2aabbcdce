@@ -1,0 +1,30 @@
+package com.bankapp.jvabasics;
+
+public class TC_21_Validatetheswitchstatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=1;i<=3;i++)
+		{
+			switch(3)
+			{
+			case 1:
+				System.out.println("the number is 1");
+			     break;
+			case 2:
+				System.out.println("the number is 2");
+			     break;
+			case 3:
+				System.out.println("the number is 3");
+			     break;
+			 default:
+			 {
+				 System.out.println("the number is 0");
+			 }
+			}
+		}
+	}
+}
+
+
+

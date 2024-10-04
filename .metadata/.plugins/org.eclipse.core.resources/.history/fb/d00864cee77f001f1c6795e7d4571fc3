@@ -1,0 +1,23 @@
+package com.bankapp.jvabasics;
+
+public class TC_9_Validatetherepetitiveelementsinarray {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+	
+	int a[]= {200,400,400,600,800};
+	int repet=400;
+	int count=0;
+	for(int i=0;i<=a.length-1;i++)
+	{
+		if(a[i]==repet)
+		{
+			System.out.println("repetitive element is:"+i);
+			count++;
+		}
+		System.out.println("the number of repetitive elements are:"+count);
+	}
+	
+	}
+}

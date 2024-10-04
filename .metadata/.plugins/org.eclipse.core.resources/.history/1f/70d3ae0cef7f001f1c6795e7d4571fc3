@@ -1,0 +1,53 @@
+package com.bankapp.jvabasics;
+
+public class TC_10_ValidatetheStringmethods {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		String s1="welcome";
+		String s2=new String("Welcome");
+		System.out.println((s1+s2).length());
+		System.out.println(s1.length());
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equalsIgnoreCase(s2));
+		System.out.println(s1==s2);
+		
+	//concat
+		System.out.println(s1+s2);
+		System.out.println(s1.concat(s2));
+		//substring
+		System.out.println(s1.substring(0,4));
+		System.out.println(s1.substring(2,4));
+		//replace
+		String s3="jspiders";
+		System.out.println(s3.replace('j', 'q'));
+		String s4=" welcome   ";
+		System.out.println(s4.length());
+		System.out.println(s4.trim());
+		System.out.println("after trimming:"+s4.length());
+		String s5="abc+@gmail.com";
+		String a[]=s5.split("@");
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		
+		System.out.println(s1.concat(s2).concat(s5));
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

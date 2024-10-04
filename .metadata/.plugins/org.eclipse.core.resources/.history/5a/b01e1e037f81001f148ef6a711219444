@@ -1,0 +1,45 @@
+package com.bankapp.selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_3_Validatethewebdrivermethods {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//to enter the url
+		driver.get("https://google.com");
+		//to get title of the webpage
+		System.out.println(driver.getTitle());
+		//to get the url of the page
+		System.out.println(driver.getCurrentUrl());
+		
+		//to get the source code of the page
+		System.out.println(driver.getPageSource());
+		 
+		//navigate methods
+		driver.navigate().to("https://flipkart.com");
+		//to navigate back
+		driver.navigate().back();
+		//to navigate forward
+		driver.navigate().forward();
+		//to refresh the page
+		driver.navigate().refresh();
+		
+	
+		
+		
+	 
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.bankapp.selenium;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_10_Validatethehandlebrowserwindows {
+public static void main(String[] args) throws InterruptedException {
+	WebDriver driver=new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	driver.manage().window().maximize();
+	driver.findElement(By.linkText("OrangeHRM")).click();
+	
+	Thread.sleep(2000);
+	Set<String> windowids=driver.getWindowHandles();
+	System.out.println(windowids);
+	//convert set to list 
+	List<String> windowslist=new ArrayList(windowids);
+	//extracwindowslistt the parent and child id's
+	String parentid=windowslist.get(0);
+	String childid=windowslist.get(1);
+	System.out.println(driver.getTitle());
+	//switch to parent
+	driver.navigate().to(parentid);
+	System.out.println(driver.getTitle());
+	//switch to child
+	driver.navigate().to(childid);
+	System.out.println(driver.getTitle());
+	
+	
+	
+	
+	
+	
+	}
+	
+
+}

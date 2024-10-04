@@ -1,0 +1,76 @@
+package com.bankapp.jvabasics;
+class D 
+{
+	D(int x)
+	{
+		System.out.println("x vaue is:"+x);
+	}
+}
+class E extends D
+{
+	E(double y)
+	{
+		super(200);
+		System.out.println("Y value is:"+y);
+	}
+}
+class F extends E
+{
+	F()
+	{
+		super(500.4);
+	}
+}
+public class TC_33_ValidatetheSupercallingstatements {
+public static void main(String[] args) {
+	
+F f=new F();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+package com.bankapp.jvabasics;
+import java.util.Arrays;
+
+public class TC_6_ValidateDoubleDimensonalArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//approach 1
+		int a[][]=new int[3][2];
+		a[0][0]=200;
+		a[0][1]=400;
+		a[1][0]=600;
+		a[1][1]=800;
+		a[2][0]=1000;
+		a[2][1]=1200;
+		
+	}
+
+}

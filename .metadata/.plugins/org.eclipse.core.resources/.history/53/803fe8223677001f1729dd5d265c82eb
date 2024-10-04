@@ -1,0 +1,31 @@
+package com.bankapp.selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_12_ValidatetheWebElementmethods2 {
+	public static void main(String[] args) {
+
+WebDriver driver=new ChromeDriver();
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+driver.get("file:///F:/Downloads/TS%20Recommended%20Apps/SHAREit/Desktop/html/webelement.html");
+driver.manage().window().maximize();
+//address of fname
+WebElement fname=driver.findElement(By.id("fn"));
+String tagname=fname.getTagName();
+System.out.println("the tagname is:"+tagname);
+String attvalue=fname.getAttribute("id");
+System.out.println("The attribute value is:"+attvalue);
+
+
+		
+		
+		
+		
+	}
+
+}

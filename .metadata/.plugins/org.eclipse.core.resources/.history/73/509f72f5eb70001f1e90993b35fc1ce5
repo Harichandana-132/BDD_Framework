@@ -1,0 +1,27 @@
+package com.bankapp.jvabasics;
+
+public class TC_5_Validatethesingledimensionalarrays {
+	public static void main(String[] args) {
+		int a[]=new int[5];
+		a[0]=200;
+		a[1]=400;
+		a[2]=600;
+		a[3]=800;
+		a[4]=1000;
+		//to find the length of array
+		System.out.println(a.length);
+		//read single value from array
+		System.out.println(a[4]);
+		//read all the values from array
+		
+		  for(int i=0;i<a.length;i++) { 
+			  System.out.println(a[i]); 
+		  }
+		 
+		//use for each loop
+		/*
+		 * for(int a1:a) { System.out.println(a1); }
+		 */
+	}
+
+}

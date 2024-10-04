@@ -1,0 +1,17 @@
+package com.bankapp.jvabasics;
+
+public class TC_25_Validatetheconstructo{
+  int id;
+  String name;
+  double marks;
+  TC_25_Validatetheconstructo(int sid,String sname,Double smarks)
+  {
+	  id=sid;
+	  name=sname;
+	  marks=smarks;
+  }
+  void display()
+  {
+	  System.out.println(id+"\n"+name+"\n"+marks);
+  }
+}

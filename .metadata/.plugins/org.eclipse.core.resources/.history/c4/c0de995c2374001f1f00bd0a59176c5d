@@ -1,0 +1,22 @@
+package com.bankapp.jvabasics;
+interface K
+{
+	abstract void test1();
+	default void test2()
+	{
+		System.out.println("test 2 is running");
+	}
+	static void test3()
+	{
+		System.out.println("test 3 is running");
+	}
+}
+class L implements K
+{
+	
+}
+
+public class TC_43_Validatetheinterface {
+	
+
+}

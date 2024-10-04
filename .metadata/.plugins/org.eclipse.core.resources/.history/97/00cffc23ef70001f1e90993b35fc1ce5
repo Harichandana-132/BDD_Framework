@@ -1,0 +1,40 @@
+package com.bankapp.jvabasics;
+
+import java.util.Arrays;
+
+public class TC_6_Validatetwodimensionalarray {
+	public static void main(String[] args) {
+		//approach1
+		int a[][]=new int[3][2];
+		a[0][0]=2000;
+		a[0][1]=4000;
+		a[1][0]=6000;
+		a[1][1]=8000;
+		a[2][0]=10000;
+		a[2][1]=12000;
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

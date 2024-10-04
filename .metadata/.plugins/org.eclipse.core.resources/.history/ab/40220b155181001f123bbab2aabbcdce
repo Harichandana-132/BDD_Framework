@@ -1,0 +1,57 @@
+package com.bankapp.jvabasics;
+
+public class TC_26_ValidatetheAccount {
+	private int accno;
+	private String name;
+	private int balance;
+	
+	
+	public int setaccno(int accno)
+	{
+		this.accno=accno;
+		return accno;
+	}
+	public int getaccno()
+	{
+		return accno;
+		
+	}
+	public String setname(String name)
+	{
+		this.name=name;
+		return name;
+	}
+	public String getname()
+	{
+		return name;
+	}
+	public int setbalance(int balance)
+	{
+		this.balance=balance;
+		return balance;
+	}
+	public int  getbalance()
+	{
+		return balance;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

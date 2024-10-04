@@ -1,0 +1,43 @@
+package com.bankapp.jvabasics;
+
+class Fr
+{
+	void smoke()
+	{
+		System.out.println("occasional smoker");
+	}
+}
+class Sr extends Fr
+{
+	void smoke()
+	{
+		System.out.println("chain  smoker");
+	}
+	void test()
+	{
+		System.out.println("test is running");
+	}
+}
+ 
+
+	public class TC_41_Validatethedowncasting {
+public static void main(String[] args) {
+	
+	
+}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

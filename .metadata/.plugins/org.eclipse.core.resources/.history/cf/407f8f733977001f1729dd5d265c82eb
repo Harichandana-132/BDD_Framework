@@ -1,0 +1,51 @@
+package com.bankapp.selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_13_ValidatetheWebElementmethods3 {
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("file:///F:/Downloads/TS%20Recommended%20Apps/SHAREit/Desktop/html/webelement.html");
+		driver.manage().window().maximize();
+		WebElement fntxt=driver.findElement(By.id("fn"));
+		Dimension fsize= fntxt.getSize();
+	int fnh=fsize.getHeight();
+	int fnw=fsize.getWidth();
+		
+	System.out.println(fnh+"\t"+fnw);
+		WebElement lntxt=driver.findElement(By.xpath("//input[@if='ln']"));
+		Dimension lsize=lntxt.getSize();
+		int lnh=lsize.getHeight();
+		int  lnw  =lsize.getWidth();
+		System.out.println(lnh+"\t"+lnw);
+		if(fnh==lnh && fnw==lnw)
+		{
+			System.out.println("same size");
+		}
+		else
+		{
+			System.out.println("different size");
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

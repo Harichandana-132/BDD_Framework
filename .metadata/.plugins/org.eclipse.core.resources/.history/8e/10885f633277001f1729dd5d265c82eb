@@ -1,0 +1,77 @@
+package com.bankapp.selenium;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TC_11_ValidatetheWebElementmethods {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("file:///F:/Downloads/TS%20Recommended%20Apps/SHAREit/Desktop/html/webelement.html");
+		driver.manage().window().maximize();
+		//address of fname field'
+		WebElement fntxtd=driver.findElement(By.id("fn"));
+		fntxtd.sendKeys("selenium");
+		fntxtd.sendKeys(Keys.CONTROL+"a");
+		//address of lname field
+		WebElement lntxd=driver.findElement(By.xpath("//input[@if='ln']"));
+		lntxd.sendKeys(Keys.CONTROL+"v");
+		//to clear the fname txtfd
+		
+		fntxtd.clear();
+		//lntxd.sendKeys(Keys.BACK_SPACE);
+		//to click on submit button
+	WebElement subbtn=	driver.findElement(By.id("log"));
+	
+		subbtn.click();
+		
+		
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

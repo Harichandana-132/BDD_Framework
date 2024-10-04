@@ -1,0 +1,56 @@
+package com.bankapp.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+//there are two ways to create page object
+/* 1)with out using pagefactory
+2)with using page Factory
+*/
+//1)with out using page factory
+public class LoginPage {
+	WebDriver driver;
+	//constructor
+	LoginPage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	//Locators
+By usr_txtfd=By.xpath("//input[@placeholder='Username']");
+By pwd_txtfd=By.xpath("//input[@placeholder='Password']");
+
+By ln_btn=By.xpath("//button[normalize-space()='Login']");
+//Action methods
+public void setusername(String user)
+{
+	driver.findElement(usr_txtfd).sendKeys(user);
+}
+public void setpassword(String pwd)
+{
+	driver.findElement(pwd_txtfd).sendKeys(pwd);
+}
+public void loginbtn()
+{
+	driver.findElement(ln_btn).click();
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

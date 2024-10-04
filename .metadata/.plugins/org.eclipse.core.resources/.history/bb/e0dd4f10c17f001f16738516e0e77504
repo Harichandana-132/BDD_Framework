@@ -1,0 +1,66 @@
+package com.bankapp.jvabasics;
+
+public class TC_2_Validatetheoperators {
+	public static void main(String[] args) {
+		int a=30;
+		int b=60;
+		//arithemetic operator
+		System.out.println("The addition of two elements are:"+(a+b));
+		System.out.println("The substraction of two elements are:"+(a-b));
+		System.out.println("The Multiplication of two elements are:"+(a*b));
+		System.out.println("The division of two elements are:"+(a/b));
+		
+		//relational operator
+		System.out.println("the relational operators are:");
+		System.out.println(a<b);
+	    System.out.println(a>b);
+	    System.out.println(a<=b);
+	    System.out.println(a>=b);
+	    System.out.println(a==b);
+		//logical operator
+		boolean c=true;
+		boolean d=false;
+		System.out.println("The Boolean operators are:");
+		System.out.println(c&&d);
+		System.out.println(c||d);
+		System.out.println(!c);
+		System.out.println(!d);
+		//increment operator
+		System.out.println("the increment operator are:");
+		//preincrement
+		int res=++a;
+		System.out.println(res);
+		//post increment
+		int rest=a++;
+		System.out.println(res);
+		System.out.println("the decrement operator are:");
+		//pre decrement
+		int dec=--a;
+		System.out.println(dec);
+		//post decrement
+		int dect=a--;
+		System.out.println(dect);
+		
+		//assignment operatORS
+		System.out.println("The assignment operators are:");
+		int g=10;
+		g+=2;
+		System.out.println(g);
+		g-=2;
+		System.out.println(g);
+		g/=2;
+		System.out.println(g);
+		g%=2;
+		System.out.println(g);
+		
+		//conditional/termnary operator
+		System.out.println("the conditional operators are");
+		int h=200,i=400;
+		int j=(h>i)?h:i;
+		System.out.println(j);
+		int personal_age=30;
+		String age=(personal_age>18)?"eligible":"not eligible";
+		System.out.println(age);
+	}
+
+}

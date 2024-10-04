@@ -1,0 +1,12 @@
+package com.bankapp.jvabasics;
+
+public class Accountmain 
+{
+	public static void main(String[] args) {
+		TC_26_ValidatetheAccount vt=new TC_26_ValidatetheAccount();
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.bankapp.jvabasics;
+
+public class TC_8_Searchingtheelementinarray {
+
+	public static void main(String[] args) {
+		int a[]= {200,400,600,800,1000,1200};
+		int search_element=1000;
+		boolean status;
+		for(int i=0;i<=a.length-1;i++)
+		{
+			if(a[i]==search_element)
+			{
+				System.out.println("element is found");
+				status=true;
+			
+			if(a[i]!=search_element)
+			{
+				System.out.println("element is not found");
+				status=false;
+			}
+			}
+		}
+		
+		
+
+	}
+
+}

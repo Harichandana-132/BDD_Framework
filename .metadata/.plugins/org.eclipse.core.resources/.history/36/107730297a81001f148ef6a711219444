@@ -1,0 +1,17 @@
+package com.bankapp.jvabasics;
+
+public class Accountmain 
+{
+	public static void main(String[] args) {
+		TC_26_ValidatetheAccount vt=new TC_26_ValidatetheAccount();
+		
+		System.out.println(vt.getaccno());
+		System.out.println(vt.setaccno(12345));
+		System.out.println(vt.setname("chandana"));
+		System.out.println(vt.getname());
+		
+	
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.bankapp.jvabasics;
+
+public class TC_38_Validatethenarrowingintypecasting {
+	int test()
+	{
+		return (int)23.45;
+	}
+public static void main(String[] args) {
+	int x=(int)34.45;
+	System.out.println("the value of x is:"+x);
+	TC_38_Validatethenarrowingintypecasting vt=new TC_38_Validatethenarrowingintypecasting();
+	System.out.println(vt.test());
+}
+}

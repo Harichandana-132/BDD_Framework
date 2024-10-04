@@ -1,0 +1,15 @@
+package com.bankapp.jvabasics;
+
+public class TC_23_Validatethemethodoverloadingvariationinlengthofargumnets {
+static void test1(int a,int b)
+{
+	int c=a+b;
+	System.out.println("the addition of two numbers is:"+c);
+}
+static void test1(int a,int b,int c)
+{
+	int d=a+b+c;
+	System.out.println("the addition of two numbers is:"+c);
+}
+}
+

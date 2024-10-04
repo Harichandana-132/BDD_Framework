@@ -1,0 +1,29 @@
+package com.bankapp.jvabasics;
+interface G
+{
+	void demo1();
+}
+interface H
+{
+	void demo2();
+}
+class U implements G,H
+{
+	public void demo1()
+	{
+		System.out.println("demo1 is runnihg");
+	}
+	public void demo2()
+	{
+		System.out.println("demo2 is runnihg");
+	}
+}
+
+public class TC_44_Validatethemultpleinheritance {
+public static void main(String[] args) {
+	U u=new U();
+	u.demo1();
+	u.demo2();
+	
+}
+}

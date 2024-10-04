@@ -1,0 +1,12 @@
+package com.bankapp.jvabasics;
+
+public class TC_22_Validatethemethodoverloadingvariationinarguments {
+	static void demo1(int a)
+	{
+		System.out.println(a);
+	}
+	static void demo1(double b)
+	{
+		System.out.println(b);
+	}
+}
